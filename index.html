@@ -1,0 +1,55 @@
+<!-- 
+File: index.html
+GUI Assignment 3: Creating an interactive dynamic multiplication table_stuff
+The Anh Tran, UMass Lowell Computer Science, theanh_tran1@student.uml.edu
+Copyright (c) 2022 by The Anh Tran. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Updated on 6/16/23 at 9:00pm.
+Instructor: Professor Wenjin Zhou
+Sources of Help: W3Schools and Stackoverflow
+Brief Overview: I created a website that is capable of creating a multiplication
+table with the range from -50 to 50.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Table</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <h1>This thing is Flawless Timmy</h1>
+    <!-- Start Multiplier Field Box -->
+    <label for="startMultiplier">Start Multiplier:</label>
+    <input type="text" id="startMultiplier" name="startMultiplier" required><br>
+
+    <!-- End Multiplier Field Box -->
+    <label for="endMultiplier">End Multiplier:</label>
+    <input type="text" id="endMultiplier" name="endMultiplier" required><br>
+
+    <!-- Start Multiplicand Field Box -->
+    <label for="startMultiplicand">Start Multiplicand:</label>
+    <input type="text" id="startMultiplicand" name="startMultiplicand" required><br>
+
+    <!-- End Multiplicand Field Box -->
+    <label for="endMultiplicand">End Multiplicand:</label>
+    <input type="text" id="endMultiplicand" name="endMultiplicand" required><br>
+
+    <!-- Generate Table Button -->
+    <input type="button" value="Generate Table" onclick="generateTable()">
+  </form>
+
+  <!-- Error Message Div -->
+  <div id="errorMessage"></div>
+
+  <!-- The Table Div/Container -->
+  <div class="container">
+    <table id="multiplicationTable">
+    </table>
+  </div>
+  
+
+</body>
+</html>
